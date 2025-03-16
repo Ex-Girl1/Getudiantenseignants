@@ -82,7 +82,7 @@ public class Test {
         // Vérification des évaluations
         List<Evaluation> evaluations = evaluationService.findAll();
         for (Evaluation eva : evaluations) {
-            System.out.println("Évaluation " + eva.getId() + " : " + eva.getEtudiant().getNom() + " a été évalué par " + eva.getEnseignant().getNom());
+            System.out.println("Évaluation "  + eva.getEtudiant().getNom() + " a été évalué par " + eva.getEnseignant().getNom());
         }
 
         // Suppression d'une évaluation
