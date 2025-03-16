@@ -16,31 +16,15 @@ public class Evaluation {
     private double note;
     private String commentaire;
 
-    // Constructeur avec ID
-    public Evaluation(int id, Enseignant enseignant, Etudiant etudiant, double note, String commentaire) {
-        this.id = id;
+
+    public Evaluation( Enseignant enseignant, Etudiant etudiant, double note, String commentaire) {
+        
         this.enseignant = enseignant;
         this.etudiant = etudiant;
         this.note = note;
         this.commentaire = commentaire;
     }
 
-    // Constructeur sans ID (pour la création)
-    public Evaluation(Enseignant enseignant, Etudiant etudiant, double note, String commentaire) {
-        this.enseignant = enseignant;
-        this.etudiant = etudiant;
-        this.note = note;
-        this.commentaire = commentaire;
-    }
-
-    // Getters et setters
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public Enseignant getEnseignant() {
         return enseignant;
