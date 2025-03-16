@@ -10,7 +10,7 @@ package beans;
  * @author hp
  */
 public class Evaluation {
-    private int id; // Ajout d'un ID unique
+    
     private Enseignant enseignant;
     private Etudiant etudiant;
     private double note;
